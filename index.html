@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Richard Sanchez - Marketing Manager</title>
+    <style>
+        :root {
+            --primary: #2d3748;
+            --secondary: #4a5568;
+            --accent: #3182ce;
+            --light: #f7fafc;
+            --gray: #edf2f7;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --radius: 12px;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--primary);
+            background-color: var(--light);
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 2rem 0;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+        
+        .profile-img {
+            width: 25%;
+            border-radius: 50%;
+            box-shadow: var(--shadow);
+            margin: 1.5rem auto;
+            display: block;
+        }
+        
+        .contact-info {
+            background: white;
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .contact-info p {
+            margin: 0.75rem 0;
+            font-weight: 500;
+        }
+        
+        section {
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent);
+            color: var(--accent);
+        }
+        
+        h3 {
+            font-size: 1.2rem;
+            margin: 1.5rem 0 1rem;
+            color: var(--secondary);
+        }
+        
+        .experience-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--gray);
+        }
+        
+        .experience-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        ul {
+            padding-left: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .skills-grid div {
+            background: var(--gray);
+            padding: 0.75rem;
+            border-radius: var(--radius);
+            text-align: center;
+            font-weight: 500;
+        }
+        
+        .languages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .languages-grid div {
+            background: var(--gray);
+            padding: 0.75rem;
+            border-radius: var(--radius);
+            text-align: center;
+            font-weight: 500;
+        }
+        
+        .reference-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .reference-item {
+            background: var(--gray);
+            padding: 1rem;
+            border-radius: var(--radius);
+            text-align: center;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: var(--secondary);
+        }
+        
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .profile-img {
+                width: 40%;
+            }
+            
+            .skills-grid, .languages-grid, .reference-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>RICHARD SANCHEZ MARKETING MANAGER</h1>
+            <img src="https://pplines-online.bj.bcebos.com/deploy/5897619/83747//b3dd59f3-b49d-4bd9-af18-bfdfcd5fd315/markdown_0/imgs/img_in_image_box_63_61_315_310.jpg?authorization=bce-auth-v1%2F5cfe9a5e1454405eb2a975c43eace6ec%2F2025-10-29T21%3A26%3A16Z%2F-1%2F%2F12d3aa58cdaac149c41fa4cfb63e1d96d31ceca8a75e88f52aa170be66f033db" alt="Richard Sanchez" class="profile-img">
+        </header>
+        
+        <section class="contact-info">
+            <p><strong>CONTACT</strong></p>
+            <p>+123-456-7890</p>
+            <p>hello@reallygreatsite.com</p>
+            <p>123 Anywhere St., Any City</p>
+            <p>www.reallygreatsite.com</p>
+        </section>
+        
+        <section>
+            <h2>PROFILE</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation. Ut enim ad minim veniam quis nostrud exercitation.</p>
+        </section>
+        
+        <section>
+            <h2>WORK EXPERIENCE</h2>
+            
+            <div class="experience-item">
+                <h3>Borcelle Studio</h3>
+                <p><strong>Marketing Manager & Specialist</strong> | 2030-PRESENT</p>
+                <ul>
+                    <li>Develop and execute comprehensive marketing strategies and campaigns that align with the company's goals and objectives.</li>
+                    <li>Lead, mentor, and manage a high-performing marketing team, fostering a collaborative and results-driven work environment.</li>
+                    <li>Monitor brand consistency across marketing channels and materials.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <h3>Fauget Studio</h3>
+                <p><strong>Marketing Manager & Specialist</strong> | 2025-2029</p>
+                <ul>
+                    <li>Create and manage the marketing budget, ensuring efficient allocation of resources and optimizing ROI.</li>
+                    <li>Oversee market research to identify emerging trends, customer needs, and competitor strategies.</li>
+                    <li>Monitor brand consistency across marketing channels and materials.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <h3>Studio Shodwe</h3>
+                <p><strong>Marketing Manager & Specialist</strong> | 2024-2025</p>
+                <ul>
+                    <li>Develop and maintain strong relationships with partners, agencies, and vendors to support marketing initiatives.</li>
+                    <li>Monitor and maintain brand consistency across all marketing channels and materials.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section>
+            <h2>EDUCATION</h2>
+            <div class="experience-item">
+                <h3>WARDIERE UNIVERSITY</h3>
+                <p><strong>Master of Business Management</strong> | 2029 - 2030</p>
+            </div>
+            <div class="experience-item">
+                <h3>WARDIERE UNIVERSITY</h3>
+                <p><strong>Bachelor of Business</strong> | 2025-2029</p>
+                <p>GPA: 3.8/4.0</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>SKILLS</h2>
+            <div class="skills-grid">
+                <div>Project Management</div>
+                <div>Public Relations</div>
+                <div>Teamwork</div>
+                <div>Time Management</div>
+                <div>Leadership</div>
+                <div>Effective Communication</div>
+                <div>Critical Thinking</div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>LANGUAGES</h2>
+            <div class="languages-grid">
+                <div>English (Fluent)</div>
+                <div>French (Fluent)</div>
+                <div>German (Basics)</div>
+                <div>Spanish (Intermediate)</div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>REFERENCE</h2>
+            <div class="reference-grid">
+                <div class="reference-item">
+                    <p><strong>Estelle Darcy</strong></p>
+                    <p>Wardiere Inc. / CTO</p>
+                    <p>Phone: 123-456-7890</p>
+                    <p>Email: hello@reallygreatsite.com</p>
+                </div>
+                <div class="reference-item">
+                    <p><strong>Harper Richard</strong></p>
+                    <p>Wardiere Inc. / CEO</p>
+                    <p>Phone: 123-456-7890</p>
+                    <p>Email: hello@reallygreatsite.com</p>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>
+                Powered by <a href="https://github.com/PaddlePaddle/PaddleOCR" target="_blank">PaddleOCR</a> 
+                and <a href="https://huggingface.co/BAIDU" target="_blank">ERNIE</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
